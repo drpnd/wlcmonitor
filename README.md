@@ -16,6 +16,12 @@ The following command outputs the number of associated stations managed by the c
 
     ./scripts/apname.sh HOST COMMUNITY
 
+### Count the number of associated stations by SSID
+
+The following command outputs the number of associated stations managed by the controller by SSID.
+
+    ./scripts/ssid.sh HOST COMMUNITY
+
 ## Tested models
 * WLC 5508
 * WLC 5760
