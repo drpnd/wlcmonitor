@@ -30,16 +30,11 @@ fi;
 host=$1
 community=$2
 
-#.1.3.6.1.4.1.9.9.513.1.1.1.1.5 
-#.1.3.6.1.4.1.9.9.599.1.3.1.1.8 
-
-
-results=`snmpwalk -Ox -v2c -c "$community" "$host" .1.3.6.1.4.1.9.9.599.1.3.1.1.8 \
-	| sed -e 's/.*STRING: \(.*\)/\1/' \
-	| sort | uniq -c`
 IFS="
 "
-for line in "$results";
+for line in `snmpwalk -Ox -v2c -c "$community" "$host" .1.3.6.1.4.1.9.9.599.1.3.1.1.8 \
+        | sed -e 's/.*STRING: \(.*\)/\1/' \
+        | sort | uniq -c`;
 do
 	IFS=" "
 	set $line
