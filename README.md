@@ -1,7 +1,6 @@
 # WLC Monitor Toolset
 
-Cisco Wireless LAN controller
-
+This project provides a toolset to monitor Cisco Wireless LAN controller over SNMP.
 
 ## Usage
 
