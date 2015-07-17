@@ -33,6 +33,6 @@ community=$2
 echo "#a b g n(2.4g) n(5g) ac" >&2
 
 snmpwalk -On -v2c -c "$community" "$host" .1.3.6.1.4.1.9.9.599.1.3.1.1.6 \
-	| sed 's/.*INTEGER: \([0-9]*\)/\1/' | sort -n | uniq -c \
+	| sed -e 's/.*INTEGER: \([0-9]*\)/\1/' | sort -n | uniq -c \
 	| awk '{data[$2]=$1}END{printf "%d %d %d %d %d %d\n", data[1], data[2], data[3], data[6], data[7], data[10]}'
 
