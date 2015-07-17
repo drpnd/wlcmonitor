@@ -10,6 +10,12 @@ The following command outputs the number of associated stations managed by the c
 
     ./scripts/protocol.sh HOST COMMUNITY
 
+### Count the number of associated stations by AP name
+
+The following command outputs the number of associated stations managed by the controller by the access point name.
+
+    ./scripts/apname.sh HOST COMMUNITY
+
 ## Tested models
 * WLC 5508
 * WLC 5760
