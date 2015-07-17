@@ -1,4 +1,4 @@
-# WLC Monitor Toolset
+# WLC Monitoring Toolset
 
 This project provides a toolset to monitor Cisco Wireless LAN controller over SNMP.
 
@@ -11,6 +11,6 @@ The following command outputs the number of associated stations managed by the c
     ./scripts/protocol.sh HOST COMMUNITY
 
 ## Tested models
-WLC 5508
-WLC 5760
+* WLC 5508
+* WLC 5760
 
